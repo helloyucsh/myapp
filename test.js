@@ -2,8 +2,8 @@ var express = require('express');
 var app = express();
 
 app.get('/', function (req, res) {
-//  res.send('Hello World!');
-    res.redirect('http://news.google.com.tw');
+  res.send('Hello World! https://github.com/helloyucsh/myapp/blob/master/test.js');
+//    res.redirect('http://news.google.com.tw');
 });
 
 var server = app.listen(80, function () {
@@ -51,8 +51,8 @@ app.get('/ab(cd)?e', function(req, res) {
 
 app.get('/*', function(req, res) {
 //        res.send('ab(cd)?e');
-//	res.redirect('/');
+	res.redirect('/');
 //
-    res.redirect('http://news.google.com.tw');
+//    res.redirect('http://news.google.com.tw');
 });
 
